@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign</title>
+
+    <style>
+      :root {
+        --prim-1: #f4f5f6;
+        --prim-2: #d1d7db;
+        --prim-3: #afb8c0;
+        --prim-4: #98a4ae;
+        --prim-5: #48535b;
+        --dark: #22272b;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+      * {
+        font-family: 'Open Sans', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: var(--prim-1);
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapper {
+        display: flex;
+        flex-flow: row;
+        width: fit-content;
+        border-radius: 3px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background: var(--dark);
+      }
+      .image-wrapper {
+        width: 120px;
+        height: 120px;
+        background-color: #000;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+      }
+      .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        border-radius: 50%;
+      }
+      a img {
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+      .links-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .social-icon,
+      .social-icon i {
+        font-size: 1.2rem;
+        color: var(--prim-1);
+      }
+      .left {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        /* border-right: 2px var(--prim-5) solid; */
+      }
+      .right {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 20px;
+      }
+      .title {
+        margin-bottom: 10px;
+        color: var(--prim-1);
+      }
+      .subtitle {
+        margin-bottom: 12px;
+        color: var(--prim-2);
+      }
+      .info-link {
+        margin-bottom: 2px;
+      }
+      .info-link a {
+        display: flex;
+        align-items: center;
+        font-size: 0.8em;
+        text-decoration: none;
+        text-emphasis: none;
+        color: var(--prim-3);
+      }
+      .info-link a span {
+        color: var(--prim-3);
+      }
+      .info-link a img {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+      .info-link a:hover span {
+        color: var(--prim-2);
+      }
+      .info-link i {
+        color: var(--prim-3);
+        margin-right: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <div class="image-wrapper">
+          <img
+            src="http://gravatar.com/avatar/d559edc635b73a8e2cf07abd58ae59e7?s=160"
+            alt="Picture"
+          />
+        </div>
+        <div class="links-left">
+          <div class="social-icon">
+            <a href="https://linkedin.com/in/rshrj"
+              ><img
+                src="./assets/icons/linkedin-brands.png"
+                width="19"
+                height="19"
+                alt="LinkedIn"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://facebook.com/rshrjnc"
+              ><img
+                src="./assets/icons/facebook-brands.png"
+                width="19"
+                height="19"
+                alt="Facebook"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://twitter.com/SheavesOfColor"
+              ><img
+                src="./assets/icons/twitter-brands.png"
+                width="19"
+                height="19"
+                alt="Twitter"
+            /></a>
+          </div>
+          <div class="social-icon">
+            <a href="https://instagram.com/rshrj"
+              ><img
+                src="./assets/icons/instagram-brands.png"
+                width="19"
+                height="19"
+                alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="title"><h2>Rishi Raj</h2></div>
+        <div class="subtitle">Department of Physics, IIT Madras</div>
+        <div class="links-right">
+          <div class="info-link">
+            <a href="mailto:rishiraj.1012exp@gmail.com"
+              ><img
+                src="./assets/icons/paper-plane-solid.png"
+                width="13"
+                height="13"
+                alt="Email"
+              />
+              <span>rishiraj.1012exp@gmail.com</span></a
+            >
+          </div>
+          <div class="info-link">
+            <a href="tel:+917982936310"
+              ><img
+                src="./assets/icons/phone-alt-solid.png"
+                width="13"
+                height="13"
+                alt="Phone"
+              />
+              <span>(+91) 79829 36310</span></a
+            >
+          </div>
+          <div class="info-link">
+            <a href="https://goo.gl/maps/z2ZKp3gBSCUwjxPm9"
+              ><img
+                src="./assets/icons/map-marker-alt-solid.png"
+                width="13"
+                height="13"
+                alt="Address"
+              />
+              <span>443, Ganga Hostel, IITM, Chennai - 600036</span></a
+            >
+          </div>
+          <div class="info-link">
+            <a href="https://rishi.vision"
+              ><img
+                src="./assets/icons/globe-solid.png"
+                width="13"
+                height="13"
+                alt="Website"
+              />
+              <span>rishi.vision</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
